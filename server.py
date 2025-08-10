@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")  # Ключ из Render Secrets
+DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
 
 @app.route("/v1/chat/completions", methods=["POST"])
